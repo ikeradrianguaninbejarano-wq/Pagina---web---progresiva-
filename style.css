@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+#estado-conexion {
+    display: inline-block;
+    background: white;
+    color: #222;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #2563eb;
+    border-color: transparent;
+}
+
+button {
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+#lista-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 22px 15px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+.pendiente {
+    color: #d97706;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}

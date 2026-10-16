@@ -1,0 +1,9 @@
+{
+  "name": "TaskFlow Offline",
+  "short_name": "TaskFlow",
+  "description": "Aplicación para gestionar tareas con funcionamiento sin conexión y sincronización.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#1e293b"
+}

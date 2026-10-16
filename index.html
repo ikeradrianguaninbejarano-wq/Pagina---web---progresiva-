@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow Offline</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <h1>TaskFlow Offline</h1>
+        <p>Gestiona tus tareas incluso sin conexión</p>
+
+        <div id="estado-conexion">
+            🟢 En línea
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Nueva tarea</h2>
+
+            <form id="form-tarea">
+                <label for="titulo">Título de la tarea:</label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    name="titulo"
+                    placeholder="Ej. Terminar informe"
+                    required
+                >
+
+                <button type="submit">
+                    Agregar tarea
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Mis tareas</h2>
+
+            <div id="lista-tareas">
+                <p>Cargando tareas...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html> 
